@@ -22,8 +22,8 @@ const Auth = () => {
             password
         }
 
-        const url = 'https://socialmtn.devmountain.com'
-        //const url = 'http://localhost:4005'
+        // const url = 'https://socialmtn.devmountain.com'
+        const url = 'http://localhost:4005'
 
         axios.post(register ? `${url}/register` : `${url}/login`, body)
             .then((res) => {
